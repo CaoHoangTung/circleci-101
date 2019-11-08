@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: echo "BUILD"
   
-  build:
+  test:
     docker:
       - image: circleci/python:3.6.2-stretch-browsers
     steps:
