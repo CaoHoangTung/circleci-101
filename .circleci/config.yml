@@ -14,3 +14,9 @@ jobs:
       - checkout
       - run: echo "TEST"
       - run: git reset --soft HEAD~1
+workflows:
+  version: 2
+  one_and_two:
+    jobs:
+      - one
+      - two
